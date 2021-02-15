@@ -71,7 +71,7 @@ zplug 'plugins/aws', from:oh-my-zsh
 zplug 'plugins/rbenv', from:oh-my-zsh
 # new ls
 zplug 'supercrabtree/k'
-
+zplug 'plugins/autojump', from:oh-my-zsh
 # docker
 zplug 'plugins/docker', from:oh-my-zsh
 zplug 'plugins/docker-compose', from:oh-my-zsh

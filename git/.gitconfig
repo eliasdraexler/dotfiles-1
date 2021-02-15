@@ -6,7 +6,8 @@
     recursive = "!sh -c 'for i in . `git submodule foreach -q --recursive pwd`; do cd $i && git $@; done' -"
     recursive-sh = "!sh -c 'for i in . `git submodule foreach -q --recursive pwd`; do cd $i && $@; done' -"
     pt = !git tag -l | xargs git tag -d && git fetch -t
-
+    s = status
+    up = pull --rebase
 [branch]
     sort = -committerdate
 
@@ -38,9 +39,11 @@
 [rerere]
 	enabled = true
 
-[include]
-	path = ~/.gitconfig.private
-	path = ~/.gitconfig.work
+[user]
+    name = Elias Dräxler
+    email = elias.draexler@viesure.io
+
+
 [init]
 	templatedir = ~/.git-templates
 [core]
